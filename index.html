@@ -81,10 +81,11 @@
                 class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block"
               >
                 <img
-                  class="img-fluid rounded-pill d-block"
+                  class="rounded-pill d-block"
                   src="images/profile.jpg"
                   title="I'm Montassar"
                   alt=""
+                  style="max-width:100%;height: 170px;"
                 />
               </span>
               <h1 class="text-5 text-white text-center mb-0 d-lg-block">
@@ -113,11 +114,11 @@
                     >Portfolio</a
                   >
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link smooth-scroll" href="#testimonial"
                     >Testimonial</a
                   >
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link smooth-scroll" href="#contact">Contact</a>
                 </li>
@@ -1444,9 +1445,8 @@
 
         <!-- Testimonial
     ============================================= -->
-        <section id="testimonial" class="section bg-dark-1">
+        <!-- <section id="testimonial" class="section bg-dark-1">
           <div class="container px-lg-5">
-            <!-- Heading -->
             <div class="position-relative d-flex text-center mb-5">
               <h2
                 class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
@@ -1461,7 +1461,6 @@
                 ></span>
               </p>
             </div>
-            <!-- Heading end-->
 
             <div
               class="owl-carousel owl-light owl-theme"
@@ -1598,7 +1597,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- Testimonial end -->
 
         <!-- Contact Me
@@ -1621,128 +1620,123 @@
               </p>
             </div>
             <!-- Heading end-->
-            <div class="row gy-5">
-              <div
-                class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start"
-              >
-                <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
-                <p class="text-3 text-light mb-4">
-                  Residence Grenata, bloc1, apt10<br />
-                  2063, Ben Arous, Tunisia
-                </p>
-                <p class="text-3 text-light mb-1">
-                  <span class="text-primary text-4 me-2"
-                    ><i class="fas fa-phone"></i></span
-                  >(216) 55 418 582
-                </p>
-                <p class="text-3 text-light mb-4">
-                  <span class="text-primary text-4 me-2"
-                    ><i class="fas fa-envelope"></i></span
-                  >montassar.hizem@esprit.tn
-                </p>
-                <h2 class="mb-3 text-5 text-white text-uppercase">Follow Me</h2>
-                <ul
-                  class="social-icons social-icons-muted justify-content-center justify-content-md-start"
+            <div class="container">
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                </div>
+                <div
+                  class="col-md-auto"
                 >
-                  <li class="social-icons-facebook">
-                    <a
-                      data-bs-toggle="tooltip"
-                      href="https://www.facebook.com/profile.php?id=100003238706050"
-                      target="_blank"
-                      title="Facebook"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                  </li>
-                  <li class="social-icons-github">
-                    <a
-                      data-bs-toggle="tooltip"
-                      href="https://github.com/HizemMontassar"
-                      target="_blank"
-                      title="GitHub"
-                      ><i class="fab fa-github"></i
-                    ></a>
-                  </li>
-                  <li class="social-icons-linkedin">
-                    <a
-                      data-bs-toggle="tooltip"
-                      href="https://www.linkedin.com/in/montassar-hizem/"
-                      target="_blank"
-                      title="LinkedIn"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-8 col-xl-9 order-0 order-md-1">
-                <h2
-                  class="mb-3 text-5 text-white text-uppercase text-center text-md-start"
-                >
-                  Send us a note
-                </h2>
-                <form
-                  id="contact-form"
-                  class="form-dark"
-                  action="mail.php"
-                  method="post"
-                >
-                  <div class="row g-4">
-                    <div class="col-xl-6">
-                      <input
-                        name="fullName"
-                        id="fullName"
-                        type="text"
-                        class="form-control"
-                        required
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="col-xl-6">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        class="form-control"
-                        required
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div class="col">
-                      <textarea
-                        id="comment"
-                        name="comment"
-                        class="form-control"
-                        rows="5"
-                        required
-                        placeholder="Tell us more about your needs........"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <p class="text-center mt-4 mb-0">
-                    <button
-                      id="submit-btn"
-                      class="btn btn-primary rounded-pill d-inline-flex"
-                      type="submit"
-                    >
-                      Send Message
-                    </button>
+                  <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
+                  <p class="text-3 text-light mb-4">
+                    Residence Grenata, bloc1, apt10<br />
+                    2063, Ben Arous, Tunisia
                   </p>
-                </form>
+                  <p class="text-3 text-light mb-1">
+                    <span class="text-primary text-4 me-2"
+                      ><i class="fas fa-phone"></i></span
+                    >(216) 55 418 582
+                  </p>
+                  <p class="text-3 text-light mb-4">
+                    <span class="text-primary text-4 me-2"
+                      ><i class="fas fa-envelope"></i></span
+                    >montassar.hizem@esprit.tn
+                  </p>
+                  <h2 class="mb-3 text-5 text-white text-uppercase">Follow Me</h2>
+                  <ul
+                    class="social-icons social-icons-muted justify-content-center justify-content-md-start"
+                  >
+                    <li class="social-icons-facebook">
+                      <a
+                        data-bs-toggle="tooltip"
+                        href="https://www.facebook.com/profile.php?id=100003238706050"
+                        target="_blank"
+                        title="Facebook"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li class="social-icons-github">
+                      <a
+                        data-bs-toggle="tooltip"
+                        href="https://github.com/HizemMontassar"
+                        target="_blank"
+                        title="GitHub"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                    </li>
+                    <li class="social-icons-linkedin">
+                      <a
+                        data-bs-toggle="tooltip"
+                        href="https://www.linkedin.com/in/montassar-hizem/"
+                        target="_blank"
+                        title="LinkedIn"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-lg-2">
+                </div>
+                <!-- <div class="col-md-8 col-xl-9 order-0 order-md-1">
+                  <h2
+                    class="mb-3 text-5 text-white text-uppercase text-center text-md-start"
+                  >
+                    Send us a note
+                  </h2>
+                  <form
+                    id="contact-form"
+                    class="form-dark"
+                    action="mail.php"
+                    method="post"
+                  >
+                    <div class="row g-4">
+                      <div class="col-xl-6">
+                        <input
+                          name="fullName"
+                          id="fullName"
+                          type="text"
+                          class="form-control"
+                          required
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div class="col-xl-6">
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          class="form-control"
+                          required
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="col">
+                        <textarea
+                          id="comment"
+                          name="comment"
+                          class="form-control"
+                          rows="5"
+                          required
+                          placeholder="Tell us more about your needs........"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <p class="text-center mt-4 mb-0">
+                      <button
+                        id="submit-btn"
+                        class="btn btn-primary rounded-pill d-inline-flex"
+                        type="submit"
+                      >
+                        Send Message
+                      </button>
+                    </p>
+                  </form>
+                </div> -->
               </div>
-            </div>
-          </div>
         </section>
-        <!-- Contact Me end -->
       </div>
-      <!-- Content end -->
-
-      <!-- Footer
-  ============================================= -->
 
     </div>
-    <!-- Document Wrapper end -->
-
-    <!-- Back to Top
-============================================= -->
     <a
       id="back-to-top"
       class="rounded-circle"
