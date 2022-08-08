@@ -10,32 +10,33 @@
     $comment = $_POST['comment'];
 
     $messagecontent ="Name = ". $fullName . "<br>Email = " . $email . "<br>Message =" . $comment;
-    echo($messagecontent)
-    // $mail = new PHPMailer(true);
 
-    // try{
-    //     $mail->isSMTP();
-    //     $mail->Host = 'smtp.gmail.com'; 
-    //     $mail->SMTPAuth = true;
-    //     $mail->Username = 'luisvillala8@gmail.com';
-    //     $mail->Password = 'Monta404';
-    //     $mail->Port = 587;
+    $mail = new PHPMailer(true);
+    $mail->IsSMTP();
+    $mail->Mailer = "smtp";
 
-    //     $mail->setFrom('from@example.com', 'Mailer');
-    //     $mail->addAddress('ellen@example.com');
-    //     $mail->addReplyTo('info@example.com', 'Information');
+    try{
+        $mail->SMTPDebug = 1;
+        $mail->SMTPAuth = TRUE;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Host = 'smtp.gmail.com'; 
+        $mail->Username = 'luisvillala8@gmail.com';
+        $mail->Password = 'Monta404';
+        $mail->Port = 587;
+        
+        $mail->isHTML(true);
+        $mail->setFrom('luisvillala8@gmail.com', 'Mailer');
+        $mail->addAddress('montassar.hizem@esprit.tn');
 
-    //     $mail->isHTML(true);
+        $mail->Subject = 'Portfolio Job Offer';
+        $mail->Body    = $messagecontent;
 
-    //     $mail->Subject = 'Portfolio Job Offer';
-    //     $mail->Body    = $messagecontent;
-
-    //     $mail->send();
-    //     echo 'Message has been sent';
-    // }
-    // catch (Exception $e) {
-    //      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    //  }
+        $mail->send();
+        echo 'Message has been sent';
+    }
+    catch (Exception $e) {
+         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+     }
 
     // $to = 'montassar.hizem@esprit.tn';
     // $subject = 'Job Proposal';
