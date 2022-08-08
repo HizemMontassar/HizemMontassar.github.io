@@ -9,35 +9,33 @@
     $email = $_POST['email'];
     $comment = $_POST['comment'];
 
-    // preparing mail content
     $messagecontent ="Name = ". $fullName . "<br>Email = " . $email . "<br>Message =" . $comment;
+    echo($messagecontent)
+    // $mail = new PHPMailer(true);
 
-    //Create an instance; passing `true` enables exceptions
-    $mail = new PHPMailer(true);
+    // try{
+    //     $mail->isSMTP();
+    //     $mail->Host = 'smtp.gmail.com'; 
+    //     $mail->SMTPAuth = true;
+    //     $mail->Username = 'luisvillala8@gmail.com';
+    //     $mail->Password = 'Monta404';
+    //     $mail->Port = 587;
 
-    try{
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; 
-        $mail->SMTPAuth = true;
-        $mail->Username = 'luisvillala8@gmail.com';
-        $mail->Password = 'Monta404';
-        $mail->Port = 587;
+    //     $mail->setFrom('from@example.com', 'Mailer');
+    //     $mail->addAddress('ellen@example.com');
+    //     $mail->addReplyTo('info@example.com', 'Information');
 
-        $mail->setFrom('from@example.com', 'Mailer');
-        $mail->addAddress('ellen@example.com');
-        $mail->addReplyTo('info@example.com', 'Information');
+    //     $mail->isHTML(true);
 
-        $mail->isHTML(true);
+    //     $mail->Subject = 'Portfolio Job Offer';
+    //     $mail->Body    = $messagecontent;
 
-        $mail->Subject = 'Portfolio Job Offer';
-        $mail->Body    = $messagecontent;
-
-        $mail->send();
-        echo 'Message has been sent';
-    }
-    catch (Exception $e) {
-         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-     }
+    //     $mail->send();
+    //     echo 'Message has been sent';
+    // }
+    // catch (Exception $e) {
+    //      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    //  }
 
     // $to = 'montassar.hizem@esprit.tn';
     // $subject = 'Job Proposal';
